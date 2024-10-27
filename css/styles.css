@@ -8,7 +8,7 @@
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f4f4f4;
-    color: #333;
+    color: #d21010;
     line-height: 1.6;
 }
 
@@ -50,17 +50,15 @@ section {
     display: inline-block;
     margin: 20px;
     padding: 20px;
-    border: 1px solid #160101;
-    background-color: rgb(208, 30, 30);
+    border: 1px solid #921717;
+   
 }
 
 .hotel-card img {
     max-width: 100%;
 }
 
-.coming-soon {
-    background-color: #f0f0f0;
-}
+
 
 .contact-section form {
     display: block;
