@@ -17,21 +17,37 @@
         </nav>
     </header>
 
-    <section class="contact-section">
-        <h1>Contact Us</h1>
-        <form action="submit.php" method="post" class="contact-form" id="contactForm">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required>
-            <br>
+  
+            <form action="submit_contact.php" method="post" class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="name">Full Name </label>
+                    <input type="text" id="name" name="name" required autocomplete="name">
+                    <span id="nameError" class="error-message"></span> <!-- Error message element -->
+                </div>
 
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-            <br>
-            <label for="message">Message</label>
-            <textarea id="message" name="message" required></textarea>
-            <br>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required autocomplete="off">
+                    <span id="PhoneError" class="error-message"></span> <!-- Error message element -->
+                </div>
 
-            <button type="submit"  >Send </button>
+
+                <div class="form-group">
+                    <label for="email"> Email</label>
+                    <input type="email" id="email" name="email" required autocomplete="off">
+                    <span id="emailError" class="error-message"></span> <!-- Error message element -->
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required autocomplete="off">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required autocomplete="off"></textarea>
+                    <span id="messageError" class="error-message"></span> <!-- Error message element -->
+                </div>
         </form>
 
         <div class="contact-info">
