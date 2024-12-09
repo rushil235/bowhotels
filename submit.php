@@ -7,9 +7,7 @@
     <input type="email" id="email" name="email" required>
     <br>
     
-    <label for="phone">Phone</label>
-    <input type="text" id="phone" name="phone">
-    <br>
+
     
     <label for="subject">Subject</label>
     <input type="text" id="subject" name="subject">
