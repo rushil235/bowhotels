@@ -19,14 +19,14 @@ if ($conn->connect_error) {
 
 // Get form data
 $name = $_POST['name'];
-$phone = $_POST['phone'];
+
 $email = $_POST['email'];
-$subject = $_POST['subject'];
+
 $message = $_POST['message'];
 
 // Use prepared statements to prevent SQL injection
-$stmt = $conn->prepare("INSERT INTO contacts (name, phone, email, subject, message) VALUES (?, ?, ?, ?, ?)");
-$stmt->bind_param("sssss", $name, $phone, $email, $subject, $message);
+$stmt = $conn->prepare("INSERT INTO contacts (name, phone, email, subject, message) VALUES (?, ?, ?)");
+$stmt->bind_param(, $name,, $email, $message);
 
 // Execute the query and check for success
 if ($stmt->execute()) {
