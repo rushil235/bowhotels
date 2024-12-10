@@ -5,7 +5,7 @@ error_reporting(E_ALL);
 
 // Replace with your RDS database credentials
 $servername = "rushilshahfainalexam.czptxhzjxjrt.us-east-1.rds.amazonaws.com";
-$username = "rushilshahfainalexam";
+$username = "rushilfainallab";
 $password = "Rushil112119";
 $dbname = "hotelfainalexam";
 
