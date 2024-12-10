@@ -25,7 +25,7 @@ $subject = $_POST['subject'];
 $message = $_POST['message'];
 
 // Use prepared statements to prevent SQL injection
-$stmt = $conn->prepare("INSERT INTO contacts (name, phone, email, subject, message) VALUES (?, ?, ?, ?, ?)");
+$stmt = $conn->prepare("INSERT INTO hotelfainalexam (name, phone, email, subject, message) VALUES (?, ?, ?, ?, ?)");
 $stmt->bind_param("sssss", $name, $phone, $email, $subject, $message);
 
 // Execute the query and check for success
